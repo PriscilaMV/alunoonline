@@ -24,6 +24,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(t);
             }
         });
+
+        Button mapa = findViewById(R.id.map);
+        mapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent t = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(t);
+            }
+        });
     }
 }
 
